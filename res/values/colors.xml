@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="oppo_gray_color">#ffb2b2b2</color>
+    <color name="date_color">#ff6b6b6b</color>
+    <color name="info_color">#ffffffff</color>
+    <color name="oppo_time_line_text_color">#ffffffff</color>
+    <color name="button_tcolor">#ff505050</color>
+    <color name="oppo_solid_time_text_color">#ffffffff</color>
+    <color name="edit_text_hint_color">#ffafafaf</color>
+    <color name="mood_text_color">#ff505050</color>
+    <color name="window_background_color">#ffffffff</color>
+    <color name="camera_window_background">#00ffffff</color>
+    <color name="tranparent">#00000000</color>
+</resources>

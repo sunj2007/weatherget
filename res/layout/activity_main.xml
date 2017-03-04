@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_na"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin" >
+
+    <RelativeLayout
+        android:id="@+id/SearchRL"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <Spinner
+            android:id="@+id/SpinnerCity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="5.0dip" />
+
+        <EditText
+            android:id="@+id/ETSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.0dip"
+            android:layout_toLeftOf="@+id/BTSearch"
+            android:hint="@string/et_search_hint"
+            android:maxLength="5"
+            android:textColorHint="#ffffffff" />
+
+        <Button
+            android:id="@+id/BTSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="@string/bt_search" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/TextViewToday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/SearchRL"
+        android:textColor="#ffffffff"
+        android:textSize="20.0sp" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/TextViewToday" >
+
+        <TextView
+            android:id="@+id/TextViewForecast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="5.0dip"
+            android:textColor="#ffffffff"
+            android:textSize="18.0sp" />
+    </ScrollView>
+
+</RelativeLayout>
